@@ -52,7 +52,7 @@
     content: "";
     width: 80px;
     height: 80px;
-    background: #00aab1 url(/font/svgimage/nav-arrow.svg) no-repeat center center;
+    background: #00aab1 url(../font/svgimage/nav-arrow.svg) no-repeat center center;
     position: absolute;
     left: 0;
     top: 50%;
@@ -273,7 +273,7 @@ body > footer {
     width: 40px;
     height: 40px;
     display: block;
-    background: url(/font/svgimage/download.svg) no-repeat center center;
+    background: url(../font/svgimage/download.svg) no-repeat center center;
     border: 0;
     border-radius: 50%;
 }
