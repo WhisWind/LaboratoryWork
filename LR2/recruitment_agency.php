@@ -309,9 +309,9 @@ require_once(__DIR__  . "/logic.php");
                 </div>
 
                 <div class="mb-3">
-                    <label>Фильтрация по арендодателю:</label>
+                    <label>Фильтрация по работодателю:</label>
                     <select name="landlord" class="form-control">
-                        <option value="" selected>Выберите арендодателя</option>
+                        <option value="" selected>Выберите работодателя</option>
                         <?php if (!empty($countries)): ?>
                             <?php foreach ($countries as $row): ?>
                                 <option value="<?= $row['id'] ?>" <?= isset($_GET['landlord']) && $_GET['landlord'] == $row['id'] ? 'selected' : '' ?>>
