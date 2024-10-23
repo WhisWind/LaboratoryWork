@@ -269,7 +269,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '../LR3/header.php');
 
 
                 <input type="submit" value="Применить фильтр" class="btn btn-primary">
-                <a href=".core/index.php" class="btn btn-danger">Очистить фильтр</a>
+                <a href="/LR3/recruitment_agency.php" class="btn btn-danger">Очистить фильтр</a>
             </form>
         </div>
 
