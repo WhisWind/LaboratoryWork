@@ -40,12 +40,9 @@ class CorrectionText {
     public static function task18($html){
 
         $html = mb_convert_encoding($html, 'HTML-ENTITIES', 'UTF-8');
-        // Загружаем HTML в DOMDocument
-
-        //@$dom->loadHTML("<div>{$html}</div>", LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD); // загружаем HTML
 
         $dom = new DOMDocument();
-        @$dom->loadHTML($html, LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD); // Загружаем HTML
+        @$dom->loadHTML("<div>{$html}</div>", LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD); // загружаем HTML
         $xpath = new DOMXPath($dom);
 
         // Получаем все <p> теги
